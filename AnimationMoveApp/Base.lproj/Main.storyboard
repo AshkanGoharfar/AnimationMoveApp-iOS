@@ -23,7 +23,7 @@
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pYD-Rm-xw7">
                                 <rect key="frame" x="87" y="453" width="240" height="128"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="JqM-ce-r0H"/>
                                 </constraints>
@@ -39,7 +39,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="pYD-Rm-xw7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="3qu-Os-T6e"/>
                             <constraint firstItem="Nbf-cF-iZP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="7w7-Dr-h0i"/>
@@ -52,6 +52,11 @@
                             <constraint firstItem="Nbf-cF-iZP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="157" id="tXk-23-npK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myImageView" destination="pYD-Rm-xw7" id="GdW-FS-2nO"/>
+                        <outlet property="myLabel" destination="Nbf-cF-iZP" id="VEH-ux-K0K"/>
+                        <outlet property="myTextField" destination="Yta-xg-gA4" id="115-ZR-XY7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,8 +64,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
